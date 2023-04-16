@@ -1,5 +1,5 @@
 const express = require('express')
-const dotenv = require('dotenv').config()
+const dotenv = require('dotenv').config({path :'../.env'})
 const colors= require ('colors')
 const port= process.env.PORT || 5000;
 const {errorHandler} = require('./middleware/errorMiddleware')
